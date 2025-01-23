@@ -29,10 +29,13 @@ public class UserService {
     }
 
 
-    public Optional<User> getById(long id){ return Repository.findById(id);}
+    public Optional<User> getById(long id){
+        return Repository.findById(id);
+    }
+    
     public Optional<User> getByEmail(String email){
         return Repository.findByEmail(email);
-   }
+    }
 
 
 
